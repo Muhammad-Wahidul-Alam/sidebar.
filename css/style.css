@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header nav{
+    background-color: rgb(20, 12, 2);
+    padding: 0 50px;
+}
+
+header nav button{
+    background-color: rgb(243, 106, 106);
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 300px;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100vh;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: 0.3s ease-in;
+    transform-origin: left;
+
+}
+
+.activeSidebar{
+    transform: scaleX(1);
+    opacity: 1;
+}
